@@ -14,13 +14,13 @@ export const RouterR = () => {
         <Menu/>
         <Routes>
             <Route path="/" element={<HomePage/>}/>
-            <Route path="/Home page" element={<HomePage/>}/>
-            <Route path="/Fashion events" element={<Fashion/>}/>
-            <Route path="/Admin dashboard" element={<Admin/>}/>
+            <Route path="/HomePage" element={<HomePage/>}/>
+            <Route path="/FashionEvents" element={<Fashion/>}/>
+            <Route path="/AdminDashboard" element={<Admin/>}/>
             <Route path="/Makeup" element={<Makeup/>}/>
             <Route path="/Models" element={<Models/>}/>
-            <Route path="/Photos sales" element={<Photos/>}/>
-            <Route path="/Exclusive membership" element={<VIP/>}/>
+            <Route path="/PhotosSales" element={<Photos/>}/>
+            <Route path="/ExclusiveMembership" element={<VIP/>}/>
             <Route path="*" element={<ErrorComponent/>}/>
            
         
