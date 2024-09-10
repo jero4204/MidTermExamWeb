@@ -21,7 +21,7 @@ export const VIP = () => {
   <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_k8FJKDX--Ry_1HaadBYDy6qb1oHr2EA5g&s"
         alt="Descripción"
-        className="w-full h-full rounded-7xl  "/>
+        className="w-full h-full rounded-3xl  "/>
   
 
   </div>
