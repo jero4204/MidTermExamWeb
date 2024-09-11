@@ -1,4 +1,4 @@
-export interface maquillaje {
+export interface Maquillaje {
     tipoMaquillaje: string;
     precio: number;
     nombre: string;
