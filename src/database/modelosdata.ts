@@ -7,7 +7,7 @@ export const modelosData: Modelos[] = [
         edad: 28,
         añosExperiencia: 18,
         estatura: 1.80,
-        imagen : "kendall1.webp"
+        imagen : "Kendall1.webp"
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ export const modelosData: Modelos[] = [
         edad: 29,
         añosExperiencia: 13,
         estatura: 1.73,
-        imagen: "gardner1.jpg"
+        imagen: "virginia1.jpg"
     },
     {
         id: 6,

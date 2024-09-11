@@ -7,7 +7,7 @@ export const maquillajesData: Maquillaje[]=[
         precio: 55000,
         nombre: "Better than sex",
         marca: "Too Face",
-        imagen: "BetherThanSexPestanina.jpeg"
+        imagen: "BetherThanSexPestanina.png"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const maquillajesData: Maquillaje[]=[
         precio: 253000,
         nombre: "Born this way",
         marca: "Too Face",
-        imagen: "BornThisWayBase.jpeg"
+        imagen: "BornThisWayBase.png"
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ export const maquillajesData: Maquillaje[]=[
         precio: 58900,
         nombre: "Shape tape",
         marca: "Tarte",
-        imagen: "ShapeTapeCorrector.jpg"
+        imagen: "ShapeTapeCorrector.png"
     },
     {
         id: 4,
@@ -31,7 +31,7 @@ export const maquillajesData: Maquillaje[]=[
         precio: 110000,
         nombre: "Hope",
         marca: "Rare Beauty",
-        imagen: "HopeRubor.jpeg"
+        imagen: "rarebeauty.png"
     },
     {
         id: 5,

@@ -8,12 +8,10 @@ function App() {
  
   return (
     <>
-    <div className= "bg-sky-100">
+    <div className= "bg-fuchsia-50">
 
 
     <RouterR/>
-    <div className="min-h-80 flex items-center justify-center bg-sky-100 ">
-    </div>
     <Contact/>
     </div>
     </>
