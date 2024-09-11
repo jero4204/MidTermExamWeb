@@ -1,9 +1,10 @@
 export const VIP = () => {
     return(
         <>
-          <div className= " bg-fuchsia-50 flex space-x-4 items-center" >
-          <h1 className="text-5xl text-pink-500">accede a nuestro contenido mas exclusivo
-            <h2 className="text-xl text-pink-400">tendras acceso a nuestra pagina VIP donde encontraras productos exclusivos ademas de nuestros servicios especiales
+        <div className=" bg-fuchsia-100">
+          <div className= " bg-fuchsia-100 flex space-x-4 items-center" >
+          <h1 className="text-5xl text-violet-600">accede a nuestro contenido mas exclusivo
+            <h2 className="text-xl text-violet-500">tendras acceso a nuestra pagina VIP donde encontraras productos exclusivos ademas de nuestros servicios especiales
              </h2>
             </h1>
             <div className="size-4/5 overflow-hidden ">
@@ -14,8 +15,8 @@ export const VIP = () => {
             </div>
           </div>
           <br></br>
-          <div className="bg-fuchsia-50 w-1/2">
-            <h1 className="text-3xl ">unete ahora y disfruta de los siguientes beneficios</h1>
+          <div className="bg-fuchsia-100 w-1/2">
+            <h1 className="text-3xl ">Nuestros planes</h1>
           </div>
    <div className="grid grid-cols-3 gap-4 font-mono"> 
 
@@ -89,6 +90,7 @@ export const VIP = () => {
         <li>Suscríbete o haz un solo pago</li>
       </ul>
     </div>
+   </div>
    </div>
         </>
     )
