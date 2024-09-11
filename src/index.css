@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+  
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Ajuste del tamaño de las imágenes automáticamente */
+}
+  
+.carousel-image {
+    min-width: 100%; /* Cada imagen ocupa el ancho del contenedor */
+    height: auto;
+}
+  
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+button:focus {
+    outline: none;
+}
+  
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
+}
