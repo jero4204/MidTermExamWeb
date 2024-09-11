@@ -11,8 +11,8 @@ export const MaquillajesComponents = ({maquillaje}:MovieProps) => {
             <h3>{nombre}</h3>
         </div>
         <div className="card-body">
-            <h3>Directed by {precio}</h3>
-            <h3>Released in {marca}</h3>
+            <h3>{precio}</h3>
+            <h3>{marca}</h3>
             
         </div>
     </div>
