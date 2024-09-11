@@ -11,7 +11,7 @@ export default {
       },
       colors: {
         azulito: {
-          DEFAULT: '#47CACC', // El valor hexadecimal del dorado
+          DEFAULT: '#47CACC', // El valor hexadecimal del azulito
         },
       },
     },
