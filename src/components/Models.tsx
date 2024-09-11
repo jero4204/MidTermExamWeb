@@ -9,10 +9,11 @@ export const Models = () => {
       nombre: '',
       edad: 0,
       añosExperiencia: 0,
-      estatura: 0
+      estatura: 0,
+      imagen: ''
       
     });
-    const {nombre,edad,añosExperiencia,estatura} = modelo;
+    const {nombre,edad,añosExperiencia,estatura,imagen} = modelo;
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setModelo({
         ...modelo,
@@ -53,9 +54,6 @@ export const Models = () => {
           onChange={handleFilterChange} // Evento para manejar los cambios en el select
         >
           <option value="all">Todas</option>
-          <option value="Base">Categoría 1</option>
-          <option value="Rubor">Categoría 2</option>
-          <option value="Corrector">Categoría 3</option>
         </select>
       </div>
 
@@ -65,7 +63,7 @@ export const Models = () => {
           .filter((modelo) => filter === 'all' || modelo.nombre === filter) // Filtra los elementos según la categoría seleccionada
           .map((modelo) => (
             <div key={modelo.id} className="p-4 bg-white rounded shadow">
-              {modelo.nombre} {/* Muestra el nombre del elemento */}
+              {modelo.nombre} edad: {modelo.edad} {/* Muestra el nombre del elemento */}
             </div>
           ))}
       </div>
@@ -76,30 +74,37 @@ export const Models = () => {
           </div>
           
          <input type="text" 
-      placeholder="ingrese el tipo" 
-      // value={tipoMaquillaje}
-       id="tipoMaquillaje"
-       name="tipoMaquillaje"
+      placeholder="ingrese el nombre" 
+       value={nombre}
+       id="nombre"
+       name="nombre"
        onChange={handleChange}/>
       <input type="number"
-      placeholder="ingrese precio"
-      // value={precio}
-       id="precio"
-       name="precio"
+      placeholder="ingrese edad"
+       value={edad}
+       id="edad"
+       name="edad"
        onChange={handleChange}/>
-      <input type="text" 
-      name="nombre"
-      id="nombre"
-      placeholder="ingrese el nombre"  
-      value={nombre}
+      <input type="number" 
+      name="añosExperiencia"
+      id="AñosExperiencia"
+      placeholder="ingrese los años de exp."  
+      value={añosExperiencia}
       onChange={handleChange}
       className="input"/>
-      <input type="text" 
-      placeholder="ingrese la marca" 
-      // value={marca}
-       id="marca"
-       name="marca"
+      <input type="number" 
+      placeholder="ingrese la estatura" 
+       value={estatura}
+       id="estatura"
+       name="estatura"
        onChange={handleChange}/>
+       <input type="text" 
+        name="imagen"
+        id="imagen"
+        placeholder="ingrese la url de la imagen"  
+        value={imagen}
+        onChange={handleChange}
+        className="input"/> 
       <button onClick={addModelo} className="button button-primary">Add</button> 
      
         </>

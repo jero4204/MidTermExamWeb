@@ -4,4 +4,5 @@ export interface Modelos {
     edad: number;
     añosExperiencia: number;
     estatura: number;
+    imagen: string;
 }
