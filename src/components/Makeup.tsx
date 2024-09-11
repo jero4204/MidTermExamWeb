@@ -70,8 +70,9 @@ export const Makeup = () => {
         {maquillajes
           .filter((maquillaje) => filter === 'all' || maquillaje.tipoMaquillaje === filter) // Filtra los elementos según la categoría seleccionada
           .map((maquillaje) => (
-            <div key={maquillaje.id} className="p-4 bg-white rounded shadow">
+            <div key={maquillaje.id} className="p-4 bg-white rounded shadow grid justify-items-stretch text-3xl">
               {maquillaje.nombre} precio: {maquillaje.precio} {/* Muestra el nombre del elemento */}
+              <img src={maquillaje.imagen} className="size-40 justify-self-end"/>
             </div>
           ))}
       </div>
