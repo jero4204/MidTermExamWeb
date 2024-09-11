@@ -5,12 +5,16 @@ import { Maquillaje } from "../models/maquillajes";
 import { modelosData } from "../database/modelosdata";
 import { Modelos } from "../models/modelos";
 import { getRandomInt } from "../logic/randoms";
+import { eventosData } from "../database/eventosdata";
+import { Evento } from "../models/eventos";
 
 export const HomePage = () => {
   let randomMaquillaje = getRandomInt(0,8)
   let randomModelos = getRandomInt(0,5)
+  let randomEventos = getRandomInt(0,3)
   const [maquillajes, setMaquillajes] = useState<Maquillaje[]>(maquillajesData);
   const [modelos, setModelos] = useState<Modelos[]>(modelosData);
+  const [eventos, setEventos] = useState<Evento[]>(eventosData);
   return(
     <>
       <div className="bg-fuchsia-50">
@@ -37,6 +41,9 @@ export const HomePage = () => {
           </div>
           <div className="bg-violet-300 p-4 rounded-md grid">
             <Link to="/FashionEvents" className="self-start justify-self-center text-2xl text-gray-900 dark:text-white">Eventos</Link>
+            <h2 className="justify-self-center">{eventos[randomEventos].nombre}</h2>
+            <h3 className="justify-self-center">{eventos[randomEventos].lugar}</h3>
+            <h3 className="justify-self-center">{eventos[randomEventos].fecha}</h3>
           </div>
         </div>
       </div>
