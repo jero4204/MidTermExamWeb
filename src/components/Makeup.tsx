@@ -54,9 +54,14 @@ export const Makeup = () => {
           onChange={handleFilterChange} // Evento para manejar los cambios en el select
         >
           <option value="all">Todas</option>
-          <option value="Base">Categoría 1</option>
-          <option value="Rubor">Categoría 2</option>
-          <option value="Corrector">Categoría 3</option>
+          <option value="Base">Bases</option> 
+          <option value="Brochas">Brochas</option>
+          <option value="Corrector">Correctores</option>
+          <option value="Esponjas">Esponjas</option>
+          <option value="iluminador">Iluminadores</option>
+          <option value="Labial">Labiales</option>
+          <option value="Pestañina">Pestañina</option>
+          <option value="Rubor">Rubores</option>
         </select>
       </div>
 
@@ -66,7 +71,7 @@ export const Makeup = () => {
           .filter((maquillaje) => filter === 'all' || maquillaje.tipoMaquillaje === filter) // Filtra los elementos según la categoría seleccionada
           .map((maquillaje) => (
             <div key={maquillaje.id} className="p-4 bg-white rounded shadow">
-              {maquillaje.nombre} {/* Muestra el nombre del elemento */}
+              {maquillaje.nombre} precio: {maquillaje.precio} {/* Muestra el nombre del elemento */}
             </div>
           ))}
       </div>

@@ -10,7 +10,7 @@ export const modelosData: Modelos[] = [
     },
     {
         id: 2,
-        nombre: "Gigi Hadit",
+        nombre: "Gigi Hadid",
         edad: 29,
         añosExperiencia: 20,
         estatura: 1.80
@@ -24,14 +24,14 @@ export const modelosData: Modelos[] = [
     },
     {
         id: 4,
-        nombre: "Barbara Palbin",
+        nombre: "Barbara Palvin",
         edad: 30,
         añosExperiencia: 22,
         estatura: 1.75
     },
     {
         id: 5,
-        nombre: "Virgina Gardner",
+        nombre: "Virginia Gardner",
         edad: 29,
         añosExperiencia: 13,
         estatura: 1.73
