@@ -9,8 +9,12 @@ export default {
         sans: ['Playwrite CU', 'sans-serif'],
         // Puedes añadir más opciones si lo deseas
       },
+      colors: {
+        azulito: {
+          DEFAULT: '#47CACC', // El valor hexadecimal del dorado
+        },
+      },
     },
   },
   plugins: [],
 }
-
