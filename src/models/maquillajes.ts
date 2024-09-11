@@ -4,4 +4,5 @@ export interface Maquillaje {
     precio: number;
     nombre: string;
     marca: string;
+    imagen: string;
 }

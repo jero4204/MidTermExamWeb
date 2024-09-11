@@ -10,10 +10,10 @@ export const Makeup = () => {
      tipoMaquillaje: '',
       precio: 0,
       nombre: '',
-      marca: ''
-      
+      marca: '',
+      imagen: ''
     });
-    const {tipoMaquillaje,precio,nombre,marca} = maquillaje;
+    const {tipoMaquillaje,precio,nombre,marca,imagen} = maquillaje;
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setMaquillaje({
         ...maquillaje,
@@ -80,31 +80,38 @@ export const Makeup = () => {
             <h1 className='text-4xl font-serif text-pink-400'>los productos de mas alta calidad</h1>
             <div className="h-full w-1/4 bg-red-500"> </div>
           </div>
-          <input type="text" 
-      placeholder="ingrese el tipo" 
-       value={tipoMaquillaje}
-       id="tipoMaquillaje"
-       name="tipoMaquillaje"
-       onChange={handleChange}/>
+      <input type="text" 
+        placeholder="ingrese el tipo" 
+        value={tipoMaquillaje}
+        id="tipoMaquillaje"
+        name="tipoMaquillaje"
+        onChange={handleChange}/>
       <input type="number"
-      placeholder="ingrese precio"
-       value={precio}
-       id="precio"
-       name="precio"
-       onChange={handleChange}/>
+        placeholder="ingrese precio"
+        value={precio}
+        id="precio"
+        name="precio"
+        onChange={handleChange}/>
       <input type="text" 
-      name="nombre"
-      id="nombre"
-      placeholder="ingrese el nombre"  
-      value={nombre}
-      onChange={handleChange}
-      className="input"/>
+        name="nombre"
+        id="nombre"
+        placeholder="ingrese el nombre"  
+        value={nombre}
+        onChange={handleChange}
+        className="input"/>
       <input type="text" 
-      placeholder="ingrese la marca" 
-       value={marca}
-       id="marca"
-       name="marca"
-       onChange={handleChange}/>
+        placeholder="ingrese la marca" 
+        value={marca}
+        id="marca"
+        name="marca"
+        onChange={handleChange}/>
+      <input type="text" 
+        name="imagen"
+        id="imagen"
+        placeholder="ingrese la url de la imagen"  
+        value={imagen}
+        onChange={handleChange}
+        className="input"/> 
       <button onClick={addMaquillaje} className="button button-primary">Add</button>
      
         </>
