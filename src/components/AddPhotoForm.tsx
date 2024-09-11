@@ -8,10 +8,24 @@ const AddPhotoForm: React.FC<AddPhotoFormProps> = ({ addPhoto }) => {
   const [name, setName] = useState('');
   const [url, setUrl] = useState('');
   const [description, setDescription] = useState('');
+  const [error, setError] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validar que los campos no estén vacíos
+    if (!name || !url || !description) {
+      setError('All fields are required');
+      return;
+    }
+
+    // Limpiar el mensaje de error
+    setError('');
+
+    // Añadir la foto si todos los campos están completos
     addPhoto({ name, url, description });
+
+    // Limpiar los campos del formulario
     setName('');
     setUrl('');
     setDescription('');

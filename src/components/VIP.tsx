@@ -13,12 +13,13 @@ export const VIP = () => {
         className= " "/>
             </div>
           </div>
-          <div className="bg-fuchsia-50">
-            <h1>unete ahora y disfruta de los siguientes beneficios</h1>
+          <br></br>
+          <div className="bg-fuchsia-50 w-1/2">
+            <h1 className="text-3xl ">unete ahora y disfruta de los siguientes beneficios</h1>
           </div>
    <div className="grid grid-cols-3 gap-4 font-mono"> 
 
-   <div className="bg-gray-900 text-white p-6 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
+   <div className="bg-red-200 text-black p-6 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
       {/* Icon and Header */}
       <div className="flex items-center mb-4">
         <span className="text-lg mr-2">🌐</span>
@@ -26,8 +27,8 @@ export const VIP = () => {
       </div>
 
       {/* Title and Price */}
-      <h2 className="text-3xl sm:text-4xl text-blue-300 font-semibold mb-2">Tier 1</h2>
-      <p className="text-lg sm:text-xl text-blue-300 mb-6">21.000 COP al mes</p>
+      <h2 className="text-3xl sm:text-4xl text-violet-600 font-semibold mb-2">Tier 1</h2>
+      <p className="text-lg sm:text-xl text-violet-600 mb-6">21.000 COP al mes</p>
 
       {/* Divider */}
       <hr className="border-gray-700 mb-6" />
@@ -41,7 +42,7 @@ export const VIP = () => {
       </ul>
     </div>
 
-    <div className="bg-gray-900 text-white p-6 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
+    <div className="bg-red-200 text-black p-6 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
       {/* Icon and Header */}
       <div className="flex items-center mb-4">
         {/* Icono de Spotify */}
@@ -50,8 +51,8 @@ export const VIP = () => {
       </div>
 
       {/* Title and Price */}
-      <h2 className="text-3xl sm:text-4xl text-blue-300 font-semibold mb-2">Tier 2</h2>
-      <p className="text-lg sm:text-xl text-blue-300 mb-6">35.400 COP al mes</p>
+      <h2 className="text-3xl sm:text-4xl text-violet-600 font-semibold mb-2">Tier 2</h2>
+      <p className="text-lg sm:text-xl text-violet-600 mb-6">35.400 COP al mes</p>
 
       {/* Divider */}
       <hr className="border-gray-700 mb-6" />
@@ -65,7 +66,7 @@ export const VIP = () => {
       </ul>
     </div>
 
-    <div className="bg-gray-900 text-white p-6 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
+    <div className="bg-red-200 text-black p-6 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
       {/* Icon and Header */}
       <div className="flex items-center mb-4">
         {/* Icono de Spotify */}
@@ -74,8 +75,8 @@ export const VIP = () => {
       </div>
 
       {/* Title and Price */}
-      <h2 className="text-3xl sm:text-4xl text-blue-300 font-semibold mb-2">Tier 3</h2>
-      <p className="text-lg sm:text-xl text-blue-300 mb-6">54.321 COP al mes</p>
+      <h2 className="text-3xl sm:text-4xl text-violet-600 font-semibold mb-2">Tier 3</h2>
+      <p className="text-lg sm:text-xl text-violet-600 mb-6">54.321 COP al mes</p>
 
       {/* Divider */}
       <hr className="border-gray-700 mb-6" />
