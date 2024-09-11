@@ -1,4 +1,4 @@
-import { maquillaje } from "../models/maquillaje";
+import { Maquillaje } from "../models/maquillajes";
 interface MovieProps {
     maquillaje: maquillaje;
 }

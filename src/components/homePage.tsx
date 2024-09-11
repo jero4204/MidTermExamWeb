@@ -12,9 +12,12 @@ export const HomePage = () => {
         className="  object-cover"
       />
         </div>
-        <div className= "h-[10vh] bg-red-500">
-            
-        </div>
+        <div className="grid grid-cols-3 gap-4">
+  <div className="bg-green-500 p-4">Div 1</div>
+  <div className="bg-red-500 p-4">Div 2</div>
+  <div className="bg-pink-500 p-4">Div 3</div>
+ 
+</div>
         </div>
 
        
