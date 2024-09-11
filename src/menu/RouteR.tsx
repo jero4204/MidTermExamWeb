@@ -3,7 +3,7 @@ import { HomePage } from "../components/homePage";
 import { Makeup } from "../components/Makeup";
 import { Models } from "../components/Models";
 import { Fashion } from "../components/Fashion";
-import { Admin } from "../components/admin";
+import { Admin } from "../components/Admin";
 import { Photos } from "../components/Photos";
 import { VIP } from "../components/VIP";
 import { Menu } from "./Menu";

@@ -1,6 +1,6 @@
 export interface maquillaje {
     tipoMaquillaje: string;
-    id: number;
+    precio: number;
     nombre: string;
     marca: string;
 }
