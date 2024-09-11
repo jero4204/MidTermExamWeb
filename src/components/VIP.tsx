@@ -3,7 +3,7 @@ export const VIP = () => {
         <>
           <div className= " bg-fuchsia-50 flex space-x-4 items-center" >
           <h1 className="text-5xl text-pink-500">accede a nuestro contenido mas exclusivo
-            <h2 className="text-xl text-pink-400">tendras acceso a nuestra pagina VIP donde encontraras productos exclusivos ademas dde nuestros servicios especiales
+            <h2 className="text-xl text-pink-400">tendras acceso a nuestra pagina VIP donde encontraras productos exclusivos ademas de nuestros servicios especiales
              </h2>
             </h1>
             <div className="size-4/5 overflow-hidden ">

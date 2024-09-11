@@ -20,7 +20,7 @@ export const HomePage = () => {
       <div className="bg-fuchsia-50">
         <div className="carousel">
           <div className="carousel-inner">
-            <img src="Homepage1.jpeg" alt="Imagen 1" className="carousel-image"/>
+            <img src="HomePage1.webp" alt="Imagen 1" className="carousel-image"/>
             <img src="Homepage2.jpeg" alt="Imagen 2" className="carousel-image"/>
             <img src="Homepage3.jpg" alt="Imagen 3" className="carousel-image"/>
           </div>
@@ -29,22 +29,34 @@ export const HomePage = () => {
         </div>
         <script src="carousel.ts"></script>
         <div className="grid grid-cols-3 gap-4 mx-4 my-4">
-          <div className="bg-violet-300 p-4 rounded-md grid space-y-4">
+          <div className="bg-violet-200 p-4 rounded-md grid space-y-4">
             <Link to="/Makeup" className="self-start justify-self-center text-2xl text-gray-900 dark:text-white">Maquillaje</Link>
-            <img src={maquillajes[randomMaquillaje].imagen} className="size-80 justify-self-center"/>
+            <img src={maquillajes[randomMaquillaje].imagen} className="size-80 justify-self-center" title="Maquillaje"/>
             <h4 className="justify-self-center">{maquillajes[randomMaquillaje].nombre}</h4>
           </div>
-          <div className="bg-violet-300 p-4 rounded-md grid space-y-4">
+          <div className="bg-violet-200 p-4 rounded-md grid space-y-4">
             <Link to="/Models" className="self-start justify-self-center text-2xl text-gray-900 dark:text-white">Modelos</Link>
-            <img src={modelos[randomModelos].imagen} className="size-80 justify-self-center"/>
+            <img src={modelos[randomModelos].imagen} className="size-80 justify-self-center" title="Modelos"/>
             <h4 className="justify-self-center">{modelos[randomModelos].nombre}</h4>
           </div>
-          <div className="bg-violet-300 p-4 rounded-md grid">
+          <div className="bg-violet-200 p-4 rounded-md grid">
             <Link to="/FashionEvents" className="self-start justify-self-center text-2xl text-gray-900 dark:text-white">Eventos</Link>
-            <h2 className="justify-self-center">{eventos[randomEventos].nombre}</h2>
-            <h3 className="justify-self-center">{eventos[randomEventos].lugar}</h3>
-            <h3 className="justify-self-center">{eventos[randomEventos].fecha}</h3>
+            <h1 className="justify-self-center text-xl">{eventos[randomEventos].nombre}</h1>
+            <h3 className="justify-self-center text-m">{eventos[randomEventos].lugar}</h3>
+            <h3 className="justify-self-center text-m">{eventos[randomEventos].fecha}</h3>
           </div>
+        </div>
+        <div className="bg-fuchsia-100 pt-8 px-8">
+          <h1 className="text-2xl">¿Quienes Somos?</h1>
+          <div className="w-full grid grid-cols-2">
+            <p className="w-3/5 self-center justify-self-center">Bienvenidos a el destino definitivo para todos tus deseos de belleza. Nos especializamos en ofrecer una experiencia de 
+              lujo que abarca desde las últimas tendencias en maquillaje hasta asesoramiento personalizado para modelos y profesionales 
+              del estilo. Nuestro compromiso es resaltar tu belleza interior y exterior con productos y servicios exclusivos de primera 
+              categoría.
+            </p>
+            <img src="ImagenDescripcion.png" title="ImagenDescripción" className="self-center justify-self-center"></img>
+          </div>
+          <div className="w-full h-4"></div>
         </div>
       </div>
     </>

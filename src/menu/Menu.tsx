@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const Menu = () => {
   return (
     <>
-<nav className="bg-gray-50 dark:bg-gray-700">
+<nav className="bg-gradient-to-l from-cyan-500 via-cyan-300 to-cyan-100 dark:bg-gray-700">
 
     <div className="max-w-screen-xl px-4 py-3 ">
         
