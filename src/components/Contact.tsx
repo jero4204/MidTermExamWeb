@@ -1,7 +1,7 @@
 export const Contact = () => {
     return(
         <>
-          <div className="bg-gradient-to-r from-blue-800 via-blue-500 to-blue-200 p-4 flex space-x-4">
+          <div className="bg-gradient-to-r from-violet-500 via-violet-300 to-violet-100 p-4 flex space-x-4">
             <h1 className="text-sm text-gray-100 ">Contactanos en</h1>
             <ul className="text-sm text-gray-100 font-serif">
               <li className='relative pl-5 before:content-["•"] before:absolute before:left-0'>andrea@belleza.com</li>    
