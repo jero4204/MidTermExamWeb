@@ -76,13 +76,7 @@ export const Makeup = () => {
 
           <div>
             <h1 className='text-4xl font-serif text-pink-400'>los productos de mas alta calidad</h1>
-            <div className="h-full w-1/4 bg-red-500">
-            {
-             maquillajesData.map((maquillaje) => {
-            return <MaquillajesComponents key={maquillaje.id} maquillaje={maquillaje} />
-          })
-        }
-            </div>
+            <div className="h-full w-1/4 bg-red-500"></div>
           </div>
           <input type="text" 
       placeholder="ingrese el tipo" 
