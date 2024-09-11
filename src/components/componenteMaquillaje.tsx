@@ -1,8 +1,8 @@
-import { maquillaje } from "../models/maquillaje";
+import { Maquillaje } from "../models/maquillajes";
 interface MovieProps {
-    maquillaje: maquillaje;
+    maquillaje: Maquillaje;
 }
-export const MovieComponent = ({maquillaje}:MovieProps) => {
+export const MaquillajesComponents = ({maquillaje}:MovieProps) => {
     const {tipoMaquillaje,precio,nombre,marca} = maquillaje;
     return (
         <div className="col">
