@@ -1,7 +1,9 @@
+import Album from "./album";
 export const Photos = () => {
     return(
         <>
-          <div>pagina fotos</div>
+          <Album/>
+
         
         </>
     )
