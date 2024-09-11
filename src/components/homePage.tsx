@@ -1,5 +1,4 @@
 
-
 export const HomePage = () => {
     
   return(
@@ -12,7 +11,7 @@ export const HomePage = () => {
             <img src="Homepage3.jpg" alt="Imagen 3" className="carousel-image"/>
           </div>
           <button className="prev" id="prevBtn">&#9664;</button> 
-          <button className="next" id="nextBtn">&#9654;</button> 
+          <button className="next" id="nextBtn">&#9654;</button>
         </div>
         <script src="carousel.ts"></script>
         <div className="grid grid-cols-3 gap-4">

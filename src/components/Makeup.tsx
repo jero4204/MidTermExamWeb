@@ -2,8 +2,7 @@ import { useState } from "react";
 import { maquillajesData } from '../database/maquillajesdata';
 import { Maquillaje } from '../models/maquillajes';
 import { MaquillajesComponents } from './componenteMaquillaje';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "react-bootstrap";
+//import 'bootstrap/dist/css/bootstrap.min.css';
 export const Makeup = () => {
     const [maquillajes, setMaquillajes] = useState<Maquillaje[]>(maquillajesData);
     const [maquillaje, setMaquillaje] = useState<Maquillaje>({
@@ -101,7 +100,7 @@ export const Makeup = () => {
        id="marca"
        name="marca"
        onChange={handleChange}/>
-      <Button onClick={addMaquillaje} className="button button-primary">Add</Button>
+      <button onClick={addMaquillaje} className="button button-primary">Add</button>
      
         </>
     )
