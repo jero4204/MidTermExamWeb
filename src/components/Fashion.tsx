@@ -4,15 +4,6 @@ import { eventosData } from "../database/eventosdata";
 
 export const Fashion = () => {
     const [eventos,setEventos] = useState<Evento[]>(eventosData);
-    const [evento, setMaquillaje] = useState<Evento>({
-      id: eventos.length+1,
-      nombre: '',
-      fecha: '',
-      lugar: '',
-      modelos: [],
-      productos: [],
-      valorEntrada: 0
-    });
     return(
         <>
           <h1 className="text-4xl">Eventos</h1>

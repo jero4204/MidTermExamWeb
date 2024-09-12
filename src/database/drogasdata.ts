@@ -10,7 +10,7 @@ export const drogasData: Drogas[] = [
     {
         id:2,
         precio:2000,
-        nombre: "meta" ,
+        nombre: "Meta" ,
         marca: "MariaUp"
     },
     {
@@ -28,7 +28,7 @@ export const drogasData: Drogas[] = [
     {
         id:5,
         precio: 4000,
-        nombre: "parche",
+        nombre: "Parche",
         marca : "MariaUp"
     }
 ]
