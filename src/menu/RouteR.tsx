@@ -6,6 +6,7 @@ import { Fashion } from "../components/Fashion";
 import { Admin } from "../components/Admin";
 import { Photos } from "../components/Photos";
 import { VIP } from "../components/VIP";
+import { Ilegal } from "../components/Ilegal";
 import { Menu } from "./Menu";
 import { ErrorComponent } from "./ErrorComponent";
 export const RouterR = () => {
@@ -21,6 +22,7 @@ export const RouterR = () => {
             <Route path="/Models" element={<Models/>}/>
             <Route path="/PhotosSales" element={<Photos/>}/>
             <Route path="/ExclusiveMembership" element={<VIP/>}/>
+            <Route path="/Ilegal" element={<Ilegal/>}/>
             <Route path="*" element={<ErrorComponent/>}/>
            
         
