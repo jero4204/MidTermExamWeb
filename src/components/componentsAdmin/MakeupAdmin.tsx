@@ -1,9 +1,39 @@
 import { useState } from "react";
-import { maquillajesData } from '../database/maquillajesdata';
-import { Maquillaje } from '../models/maquillajes';
+import { maquillajesData } from "../../database/maquillajesdata";
+import { Maquillaje } from "../../models/maquillajes";
+
 //import 'bootstrap/dist/css/bootstrap.min.css';
 export const Makeup = () => {
     const [maquillajes, setMaquillajes] = useState<Maquillaje[]>(maquillajesData);
+    const [maquillaje, setMaquillaje] = useState<Maquillaje>({
+      id: maquillajes.length +1,
+     tipoMaquillaje: '',
+      precio: 0,
+      nombre: '',
+      marca: '',
+      imagen: ''
+    });
+    const {tipoMaquillaje,precio,nombre,marca,imagen} = maquillaje;
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      setMaquillaje({
+        ...maquillaje,
+        [e.target.name]: e.target.value
+      });
+    }
+    const addMaquillaje = () => {
+      setMaquillaje({
+        ...maquillaje,
+        id: maquillajes.length +2
+        
+      });
+      setMaquillajes([...maquillajes, maquillaje]);
+      /*setMovie({
+        id: 0,
+        title: '',
+        director: '',
+        year: 0
+      });*/
+    }
     const [filter, setFilter] = useState('all');
     const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setFilter(event.target.value);
@@ -47,6 +77,40 @@ export const Makeup = () => {
           ))}
       </div>
     </div>
+      <input type="text" 
+        placeholder="ingrese el tipo" 
+        value={tipoMaquillaje}
+        id="tipoMaquillaje"
+        name="tipoMaquillaje"
+        onChange={handleChange}/>
+      <input type="number"
+        placeholder="ingrese precio"
+        value={precio}
+        id="precio"
+        name="precio"
+        onChange={handleChange}/>
+      <input type="text" 
+        name="nombre"
+        id="nombre"
+        placeholder="ingrese el nombre"  
+        value={nombre}
+        onChange={handleChange}
+        className="input"/>
+      <input type="text" 
+        placeholder="ingrese la marca" 
+        value={marca}
+        id="marca"
+        name="marca"
+        onChange={handleChange}/>
+      <input type="text" 
+        name="imagen"
+        id="imagen"
+        placeholder="ingrese la url de la imagen"  
+        value={imagen}
+        onChange={handleChange}
+        className="input"/> 
+      <button onClick={addMaquillaje} className="button button-primary">Add</button>
+     
         </>
     )
 
