@@ -22,8 +22,8 @@
     min-width: 100%; /* Cada imagen ocupa el ancho del contenedor */
     height: auto;
 }
-  
-button {
+
+.prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -32,16 +32,17 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
-}
-  
-button:focus {
-    outline: none;
-}
-  
-.prev {
     left: 10px;
 }
   
 .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
     right: 10px;
 }
