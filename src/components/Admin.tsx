@@ -2,6 +2,7 @@ import { DrogasAdm } from "./componentsAdmin/DrogasAdmin"
 import { MakeupAdmin } from "./componentsAdmin/MakeupAdmin"
 import { ModelsAdmin } from "./componentsAdmin/ModelsAdmin"
 import { ProstitucionAdm } from "./componentsAdmin/ProstitucionAdmin"
+import { SicariosAdm } from "./componentsAdmin/SicariosAdmin"
 
 export const Admin = () => {
     return(
@@ -11,6 +12,8 @@ export const Admin = () => {
           <DrogasAdm/>
           <h1 className="text-3xl">Prostitutas</h1>
           <ProstitucionAdm/>
+          <h1 className="text-3xl">Sicarios</h1>
+          <SicariosAdm/>
           <h1 className="text-3xl">Modelos</h1>
           <ModelsAdmin/>
           <h1 className="text-3xl">Maquillajes</h1>
