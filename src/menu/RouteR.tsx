@@ -10,9 +10,9 @@ import { Ilegal } from "../components/Ilegal";
 import { Menu } from "./Menu";
 import { ErrorComponent } from "./ErrorComponent";
 import { LoginForm } from "../components/InicioSesion";
-import { Tier1 } from "../components/tier1";
-import { Tier3 } from "../components/tier3";
-import { Tier2 } from "../components/tier2";
+import { Tier1 } from "../components/Tier1";
+import { Tier3 } from "../components/Tier3";
+import { Tier2 } from "../components/Tier2";
 export const RouterR = () => {
   return (
     <Router>
