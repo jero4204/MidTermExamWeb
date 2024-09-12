@@ -19,10 +19,10 @@ export const Menu = () => {
                     className="text-gray-900 dark:text-white hover:underline">Home</Link>
                 </li>
                 <li>
-                    <Link to="/PhotosSales" className="text-gray-900 dark:text-white hover:underline">fotos</Link>
+                    <Link to="/PhotosSales" className="text-gray-900 dark:text-white hover:underline">Fotos</Link>
                 </li>
                 <li>
-                    <Link to="/ExclusiveMembership" className="text-gray-900 dark:text-white hover:underline">suscripcion</Link>
+                    <Link to="/ExclusiveMembership" className="text-gray-900 dark:text-white hover:underline">Suscripción</Link>
                 </li>
 
                 

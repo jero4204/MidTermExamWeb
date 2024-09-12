@@ -10,6 +10,9 @@ import { Ilegal } from "../components/Ilegal";
 import { Menu } from "./Menu";
 import { ErrorComponent } from "./ErrorComponent";
 import { LoginForm } from "../components/InicioSesion";
+import { Tier1 } from "../components/tier1";
+import { Tier3 } from "../components/tier3";
+import { Tier2 } from "../components/tier2";
 export const RouterR = () => {
   return (
     <Router>
@@ -24,6 +27,9 @@ export const RouterR = () => {
             <Route path="/PhotosSales" element={<Photos/>}/>
             <Route path="/ExclusiveMembership" element={<VIP/>}/>
             <Route path="/InicioSesion" element={<LoginForm/>}/>
+            <Route path="/Tier1" element={<Tier1/>}/>
+            <Route path="/Tier2" element={<Tier2/>}/>
+            <Route path="/Tier3" element={<Tier3/>}/>
             <Route path="/Ilegal" element={<Ilegal/>}/>
             <Route path="*" element={<ErrorComponent/>}/>
            

@@ -37,11 +37,11 @@ export const LoginForm: React.FC = () => {
     if (user) {
       // Si el usuario existe, redirige dependiendo de la membresía
       if (user.miembro === 1) {
-        navigate('/page1'); // Redirige a la página 1
+        navigate('/Tier1'); // Redirige a la página 1
       } else if (user.miembro === 2) {
-        navigate('/page2'); // Redirige a la página 2
+        navigate('/Tier2'); // Redirige a la página 2
       } else if (user.miembro === 3) {
-        navigate('/page3'); // Redirige a la página 3
+        navigate('/Tier3'); // Redirige a la página 3
       } else if (user.miembro === 4) {
         navigate('/AdminDashboard'); // Redirige a la página 3
       }
