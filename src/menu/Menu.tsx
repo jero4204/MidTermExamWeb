@@ -19,9 +19,6 @@ export const Menu = () => {
                     className="text-gray-900 dark:text-white hover:underline">Home</Link>
                 </li>
                 <li>
-                    <Link to="/AdminDashboard" className="text-gray-900 dark:text-white hover:underline">login admins</Link>
-                </li>
-                <li>
                     <Link to="/PhotosSales" className="text-gray-900 dark:text-white hover:underline">fotos</Link>
                 </li>
                 <li>

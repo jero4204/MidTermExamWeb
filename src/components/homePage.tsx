@@ -17,7 +17,7 @@ export const HomePage = () => {
   const [eventos, setEventos] = useState<Evento[]>(eventosData);
   return(
     <>
-      <div className="bg-fuchsia-50">
+      <div className="bg-fuchsia-100">
         <div className="carousel">
           <div className="carousel-inner">
             <img src="HomePage1.webp" alt="Imagen 1" className="carousel-image"/>
@@ -46,7 +46,7 @@ export const HomePage = () => {
             <h3 className="justify-self-center text-m">{eventos[randomEventos].fecha}</h3>
           </div>
         </div>
-        <div className="bg-fuchsia-100 pt-8 px-8">
+        <div className="bg-purple-100 pt-8 px-8">
           <h1 className="text-2xl">¿Quienes Somos?</h1>
           <div className="w-full grid grid-cols-2">
             <p className="w-3/5 self-center justify-self-center">Bienvenidos a el destino definitivo para todos tus deseos de belleza. Nos especializamos en ofrecer una experiencia de 

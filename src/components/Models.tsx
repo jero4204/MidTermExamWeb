@@ -62,8 +62,9 @@ export const Models = () => {
         {modelos
           .filter((modelo) => filter === 'all' || modelo.nombre === filter) // Filtra los elementos según la categoría seleccionada
           .map((modelo) => (
-            <div key={modelo.id} className="p-4 bg-white rounded shadow">
+            <div key={modelo.id} className="p-4 bg-white rounded shadow grid justify-items-stretch text-3xl">
               {modelo.nombre} edad: {modelo.edad} {/* Muestra el nombre del elemento */}
+              <img src={modelo.imagen} className="size-40 justify-self-end"/>
             </div>
           ))}
       </div>
