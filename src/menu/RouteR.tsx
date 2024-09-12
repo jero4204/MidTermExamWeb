@@ -9,6 +9,7 @@ import { VIP } from "../components/VIP";
 import { Ilegal } from "../components/Ilegal";
 import { Menu } from "./Menu";
 import { ErrorComponent } from "./ErrorComponent";
+import { LoginForm } from "../components/InicioSesion";
 export const RouterR = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ export const RouterR = () => {
             <Route path="/Models" element={<Models/>}/>
             <Route path="/PhotosSales" element={<Photos/>}/>
             <Route path="/ExclusiveMembership" element={<VIP/>}/>
+            <Route path="/InicioSesion" element={<LoginForm/>}/>
             <Route path="/Ilegal" element={<Ilegal/>}/>
             <Route path="*" element={<ErrorComponent/>}/>
            
