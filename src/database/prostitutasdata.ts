@@ -1,6 +1,6 @@
 import { Prostituta } from "../models/prostituta";
 
-export const modelosData: Prostituta[] = [
+export const prostitutasData: Prostituta[] = [
     {
         id: 1,
         nombre: "Kendall Jenner",

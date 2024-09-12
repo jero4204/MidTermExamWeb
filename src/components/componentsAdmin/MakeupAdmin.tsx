@@ -3,7 +3,7 @@ import { maquillajesData } from "../../database/maquillajesdata";
 import { Maquillaje } from "../../models/maquillajes";
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
-export const Makeup = () => {
+export const MakeupAdmin = () => {
     const [maquillajes, setMaquillajes] = useState<Maquillaje[]>(maquillajesData);
     const [maquillaje, setMaquillaje] = useState<Maquillaje>({
       id: maquillajes.length +1,
@@ -76,6 +76,10 @@ export const Makeup = () => {
             </div>
           ))}
       </div>
+    </div>
+    <div>
+      <h1 className='text-4xl font-serif text-pink-400'>Agregar Maquillaje</h1>
+      <div className="h-full w-1/4 bg-red-500"> </div>
     </div>
       <input type="text" 
         placeholder="ingrese el tipo" 

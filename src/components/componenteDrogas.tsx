@@ -3,7 +3,7 @@ import { Drogas } from "../models/drogas";
 interface ModelosProps{
     modelo:Drogas;
 }
-export const componenteModelos = ({modelo}:ModelosProps) => {
+export const componenteDrogas = ({modelo}:ModelosProps) => {
     const {nombre, precio, marca} = modelo;
     return (
         <div>
