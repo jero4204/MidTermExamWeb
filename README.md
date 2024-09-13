@@ -48,5 +48,5 @@ export default tseslint.config({
   },
 })
 ```
-#Credits
+## Credits
 Authors: Juan Felipe Gomez Londoño y Jeronimo Sanchez Cardozo
