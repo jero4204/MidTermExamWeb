@@ -3,7 +3,7 @@ import { maquillajesData } from '../database/maquillajesdata';
 import { Maquillaje } from '../models/maquillajes';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 export const Makeup = () => {
-    const [maquillajes, setMaquillajes] = useState<Maquillaje[]>(maquillajesData);
+    const [maquillajes] = useState<Maquillaje[]>(maquillajesData);
     const [filter, setFilter] = useState('all');
     const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setFilter(event.target.value);

@@ -12,9 +12,9 @@ export const HomePage = () => {
   let randomMaquillaje = getRandomInt(0,8)
   let randomModelos = getRandomInt(0,5)
   let randomEventos = getRandomInt(0,3)
-  const [maquillajes, setMaquillajes] = useState<Maquillaje[]>(maquillajesData);
-  const [modelos, setModelos] = useState<Modelos[]>(modelosData);
-  const [eventos, setEventos] = useState<Evento[]>(eventosData);
+  const [maquillajes] = useState<Maquillaje[]>(maquillajesData);
+  const [modelos] = useState<Modelos[]>(modelosData);
+  const [eventos] = useState<Evento[]>(eventosData);
   return(
     <>
       <div className="bg-fuchsia-100">

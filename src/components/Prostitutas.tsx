@@ -3,7 +3,7 @@ import { Prostituta } from "../models/prostituta";
 import { prostitutasData } from "../database/prostitutasdata";
 
 export const Prostitutas = () => {
-    const [prostitutas,setEventos] = useState<Prostituta[]>(prostitutasData);
+    const [prostitutas] = useState<Prostituta[]>(prostitutasData);
     return(
         <>
           <h1 className="text-4xl">Maquilladoras sexuales</h1>

@@ -3,7 +3,7 @@ import { Evento } from "../models/eventos";
 import { eventosData } from "../database/eventosdata";
 
 export const Fashion = () => {
-    const [eventos,setEventos] = useState<Evento[]>(eventosData);
+    const [eventos] = useState<Evento[]>(eventosData);
     return(
         <>
           <h1 className="text-4xl">Eventos</h1>

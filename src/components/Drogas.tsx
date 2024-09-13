@@ -3,7 +3,7 @@ import { Drogas } from "../models/drogas";
 import { drogasData } from "../database/drogasdata";
 
 export const DrogasP = () => {
-    const [drogas,setEventos] = useState<Drogas[]>(drogasData);
+    const [drogas] = useState<Drogas[]>(drogasData);
     return(
         <>
           <h1 className="text-4xl">Productos Especiales</h1>

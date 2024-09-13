@@ -3,8 +3,6 @@ export const Photos = () => {
     return(
         <>
           <Album/>
-
-        
         </>
     )
 }

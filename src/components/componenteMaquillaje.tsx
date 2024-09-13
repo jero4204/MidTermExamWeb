@@ -3,7 +3,7 @@ interface MovieProps {
     maquillaje: Maquillaje;
 }
 export const MaquillajesComponents = ({maquillaje}:MovieProps) => {
-    const {tipoMaquillaje,precio,nombre,marca} = maquillaje;
+    const {precio,nombre,marca} = maquillaje;
     return (
         <div className="col">
     <div className="card">

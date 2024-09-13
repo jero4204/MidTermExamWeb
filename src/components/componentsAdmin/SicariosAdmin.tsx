@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Prostituta } from "../../models/prostituta";
-import { prostitutasData } from "../../database/prostitutasdata";
 import { Sicario } from "../../models/sicarios";
 import { sicariosData } from "../../database/sicariosdata";
 

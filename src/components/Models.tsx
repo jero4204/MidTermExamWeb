@@ -3,7 +3,7 @@ import { modelosData } from "../database/modelosdata";
 import { Modelos } from "../models/modelos";
 
 export const Models = () => {
-    const [modelos, setModelos] = useState<Modelos[]>(modelosData);
+    const [modelos] = useState<Modelos[]>(modelosData);
    
     const [filter, setFilter] = useState('all');
     const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
