@@ -1,9 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Drogas } from "../models/drogas";
 import { drogasData } from "../database/drogasdata";
 
+
 export const DrogasP = () => {
-    const [drogas,setEventos] = useState<Drogas[]>(drogasData);
+    const [drogas,setEventos] = useState<Drogas[]>([]);
+    const [error, setError] = useState<string | null>(null);
+
+    const fetchDrogas = async () => {
+      try{
+        const response = await fetch('localhost:3000/Drogas');
+      if(!response.ok){
+        throw new Error('Error al obtener los datos')
+      }
+      const data:Drogas[] = await response.json();
+      setEventos(data)
+    }catch(err:any) {
+      setError(err.message);
+    }
+    }
+
+    useEffect(() => {
+      fetchDrogas();
+    },[])
+
+
     return(
         <>
           <h1 className="text-4xl">Productos Especiales</h1>

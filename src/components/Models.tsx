@@ -1,14 +1,36 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { modelosData } from "../database/modelosdata";
 import { Modelos } from "../models/modelos";
 
 export const Models = () => {
-    const [modelos, setModelos] = useState<Modelos[]>(modelosData);
-   
+    const [modelos, setModelos] = useState<Modelos[]>([]);
+    const [error, setError] = useState<string | null>(null);
     const [filter, setFilter] = useState('all');
     const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setFilter(event.target.value);
       };
+
+      const fetchModelos = async () => {
+        try{
+          const response = await fetch('localhost:3000/Models');
+        if(!response.ok){
+          throw new Error('Error al obtener los datos')
+        }
+        const data:Modelos[] = await response.json();
+        setModelos(data)
+      }catch(err:any) {
+        setError(err.message);
+      }
+      }
+
+      useEffect(() => {
+        fetchModelos();
+      },[])
+
+
+
+
+
 
     return(
         <>

@@ -1,9 +1,32 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Evento } from "../models/eventos";
 import { eventosData } from "../database/eventosdata";
 
 export const Fashion = () => {
-    const [eventos,setEventos] = useState<Evento[]>(eventosData);
+    const [eventos,setEventos] = useState<Evento[]>([]);
+    const [error, setError] = useState<string | null>(null);
+
+    const fetchFashion = async () => {
+      try{
+        const response = await fetch('localhost:3000/Fashion');
+      if(!response.ok){
+        throw new Error('Error al obtener los datos')
+      }
+      const data:Evento[] = await response.json();
+      setEventos(data)
+    }catch(err:any) {
+      setError(err.message);
+    }
+    }
+
+    useEffect(() => {
+      fetchFashion();
+    },[])
+
+
+
+
+
     return(
         <>
           <h1 className="text-4xl">Eventos</h1>

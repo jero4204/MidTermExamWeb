@@ -1,13 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { maquillajesData } from '../database/maquillajesdata';
 import { Maquillaje } from '../models/maquillajes';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 export const Makeup = () => {
-    const [maquillajes, setMaquillajes] = useState<Maquillaje[]>(maquillajesData);
+    const [maquillajes, setMaquillajes] = useState<Maquillaje[]>([]);
     const [filter, setFilter] = useState('all');
+    const [error, setError] = useState<string | null>(null);
     const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setFilter(event.target.value);
       };
+
+      const fetchMaquillaje = async () => {
+        try{
+          const response = await fetch('localhost:3000/maquillaje');
+        if(!response.ok){
+          throw new Error('Error al obtener los datos')
+        }
+        const data:Maquillaje[] = await response.json();
+        setMaquillajes(data)
+      }catch(err:any) {
+        setError(err.message);
+      }
+      }
+
+      useEffect(() => {
+        fetchMaquillaje();
+      },[])
 
     return(
         <>
