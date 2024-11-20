@@ -9,7 +9,7 @@ export const DrogasP = () => {
 
     const fetchDrogas = async () => {
       try{
-        const response = await fetch('localhost:3000/Drogas');
+        const response = await fetch('localhost:3000/drogas');
       if(!response.ok){
         throw new Error('Error al obtener los datos')
       }

@@ -8,7 +8,7 @@ export const Fashion = () => {
 
     const fetchFashion = async () => {
       try{
-        const response = await fetch('localhost:3000/Fashion');
+        const response = await fetch('localhost:3000/eventos');
       if(!response.ok){
         throw new Error('Error al obtener los datos')
       }

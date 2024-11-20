@@ -12,7 +12,7 @@ export const Models = () => {
 
       const fetchModelos = async () => {
         try{
-          const response = await fetch('localhost:3000/Models');
+          const response = await fetch('localhost:3000/modelos');
         if(!response.ok){
           throw new Error('Error al obtener los datos')
         }
