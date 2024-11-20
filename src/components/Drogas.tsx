@@ -36,6 +36,15 @@ export const DrogasP = () => {
             </div>
           ))}</div>
         
+
+        {drogas.map(drogas =>(
+              <li> key={drogas.id}
+              <strong>{drogas.nombre}</strong>
+              (<em>{drogas.precio}</em>)
+              (<em>{drogas.marca}</em>)
+              </li>
+            ))}
+
         </>
     )
 }

@@ -65,6 +65,16 @@ export const Makeup = () => {
           ))}
       </div>
     </div>
+
+    {maquillajes.map(maquillajes =>(
+              <li> key={maquillajes.id}
+              <strong>{maquillajes.nombre}</strong>
+              (<em>{maquillajes.tipoMaquillaje}</em>)
+              (<em>{maquillajes.precio}</em>)
+              (<em>{maquillajes.marca}</em>)
+              (<em>{maquillajes.imagen}</em>)
+              </li>
+            ))}
         </>
     )
 

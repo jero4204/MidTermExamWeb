@@ -16,7 +16,7 @@ const AddPhotoForm: React.FC<AddPhotoFormProps> = ({ addPhoto }) => {
     // Validar que los campos no estén vacíos
     if (!name || !url || !description) {
       setError('All fields are required');
-      return;
+      return(error);
     }
 
     // Limpiar el mensaje de error

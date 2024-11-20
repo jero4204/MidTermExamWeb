@@ -5,7 +5,7 @@ import { usersData } from '../database/usersdata';
 
 
 export const LoginForm: React.FC = () => {
-  const [users, setEventos] = useState<User[]>(usersData);
+  const [users] = useState<User[]>(usersData);
 
   // Estado para almacenar el nombre de usuario y contraseña
   const [formData, setFormData] = useState({

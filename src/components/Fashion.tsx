@@ -47,7 +47,37 @@ export const Fashion = () => {
               
             </div>
           ))}</div>
+
+           {eventos.map(eventos => (
+          <li key={eventos.id}>
+            <strong>{eventos.nombre}</strong> 
+            <strong>{eventos.modelos.map(modelos =>(
+              <li> key={modelos.id}
+              <strong>{modelos.nombre}</strong>
+              (<em>{modelos.edad}</em>)
+              (<em>{modelos.añosExperiencia}</em>)
+              (<em>{modelos.estatura}</em>)
+              (<em>{modelos.imagen}</em>)
+              </li>
+            ))}</strong> 
+            <strong>{eventos.productos.map(productos =>(
+              <li> key={productos.id}
+              <strong>{productos.nombre}</strong>
+              (<em>{productos.tipoMaquillaje}</em>)
+              (<em>{productos.precio}</em>)
+              (<em>{productos.marca}</em>)
+              (<em>{productos.imagen}</em>)
+              </li>
+            ))}</strong>
+            (<em>{eventos.fecha}</em>)
+            (<em>{eventos.lugar}</em>) 
+            (<em>{eventos.valorEntrada}</em>) 
+            
+
+          </li>
+        ))}
         
         </>
+       
     )
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const Contact = () => {
     return(
         <>
@@ -6,7 +8,7 @@ export const Contact = () => {
             <ul className="text-sm text-gray-100 font-serif">
               <li className='relative pl-5 before:content-["•"] before:absolute before:left-0'>andrea@belleza.com</li>    
               <li className='relative pl-5 before:content-["•"] before:absolute before:left-0'> 3148324667</li>
-              <a className="text-sm text-blue-500 relative pl-5 before:content-['•'] before:absolute before:left-0" href="/InicioSesion" target="_blank" rel="noopener noreferrer ">Servicios Especiales</a>
+              <Link to="/InicioSesion" className='relative pl-5 before:content-["•"] before:absolute before:left-0'>Suscripción a servicios especiales</Link>
             </ul>
 
 

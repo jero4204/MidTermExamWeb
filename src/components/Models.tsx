@@ -63,6 +63,15 @@ export const Models = () => {
       </div>
     </div>
          
+    {modelos.map(modelos =>(
+              <li> key={modelos.id}
+              <strong>{modelos.nombre}</strong>
+              (<em>{modelos.edad}</em>)
+              (<em>{modelos.añosExperiencia}</em>)
+              (<em>{modelos.estatura}</em>)
+              (<em>{modelos.imagen}</em>)
+              </li>
+            ))}
         </>
     )
 

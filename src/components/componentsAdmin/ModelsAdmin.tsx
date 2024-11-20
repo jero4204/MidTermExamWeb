@@ -2,7 +2,7 @@ import { useState } from "react";
 import { modelosData } from "../../database/modelosdata";
 import { Modelos } from "../../models/modelos";
 
-export const Models = () => {
+export const ModelsAdmin = () => {
     const [modelos, setModelos] = useState<Modelos[]>(modelosData);
     const [modelo, setModelo] = useState<Modelos>({
       id: modelos.length +1,
@@ -68,6 +68,10 @@ export const Models = () => {
             </div>
           ))}
       </div>
+    </div>
+    <div>
+      <h1 className='text-4xl font-serif text-pink-400'>Agregar Modelos</h1>
+      <div className="h-full w-1/4 bg-red-500"> </div>
     </div>
           
          <input type="text" 

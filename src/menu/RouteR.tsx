@@ -13,6 +13,7 @@ import { LoginForm } from "../components/InicioSesion";
 import { Tier1 } from "../components/Tier1";
 import { Tier2 } from "../components/Tier2";
 import { Tier3 } from "../components/Tier3";
+import { Contact } from "../components/Contact";
 export const RouterR = () => {
   return (
     <Router>
@@ -35,6 +36,7 @@ export const RouterR = () => {
            
         
         </Routes>
+        <Contact/>
     </Router>
   )
 }
